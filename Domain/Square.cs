@@ -3,7 +3,7 @@
     /// <summary>
     /// Класс квадрат
     /// </summary>
-    public class Square : IEquatable<Square>
+    public sealed class Square : IEquatable<Square>
     {
         /// <summary>
         /// Инициализирует новый экземпляр класса <see cref="Square"/>
