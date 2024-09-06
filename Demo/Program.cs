@@ -4,7 +4,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var square = new Square(1);
-        Console.WriteLine($"Hello, World! {square}");
+        try
+        {
+            var square = new Square(-11);
+            Console.WriteLine($"{square}");
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine($"{ex.Message}");
+        }
     }
 }
